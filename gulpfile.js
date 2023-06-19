@@ -1,16 +1,18 @@
 const gulp = require('gulp')
-const sass = require('gulp-sass').require('sass')
+
+const sourcemaps = require('gulp-sourcemaps')
+const sass = require('gulp-sass')(require('sass'))
 const obfuscate = require('gulp-obfuscate')
 const uglify = require('gulp-uglify')
 const imageMin = require('gulp-imagemin')
 
 function compilarSass() {
     return gulp.src('./source/styles/*.scss')
-        .pipe(sourcemap.init())
+        .pipe(sourcemaps.init())
         .pipe(sass({
             outputStyle:'compressed'
         }))
-        .pipe(sourcemap.write('./maps'))
+        .pipe(sourcemaps.write('./maps'))
         .pipe(gulp.dest('./build/styles'))
 }
 
