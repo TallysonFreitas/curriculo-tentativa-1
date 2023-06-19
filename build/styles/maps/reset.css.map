@@ -1,0 +1,1 @@
+{"version":3,"sources":["reset.scss"],"names":[],"mappings":"AAAA,EACI,SACA,UACA,sBACA","file":"../reset.css","sourcesContent":["*{\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    font-family: sans-serif;\r\n}"]}

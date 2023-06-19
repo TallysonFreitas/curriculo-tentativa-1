@@ -1,0 +1,1 @@
+function ಠ_ಠ732(n,o){return n+o}
